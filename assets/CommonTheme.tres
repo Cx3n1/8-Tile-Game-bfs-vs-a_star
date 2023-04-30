@@ -1,0 +1,62 @@
+[gd_resource type="Theme" load_steps=5 format=3 uid="uid://bm3cu0nt43f3h"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_the0i"]
+content_margin_left = 40.0
+content_margin_top = 15.0
+content_margin_right = 40.0
+content_margin_bottom = 45.0
+bg_color = Color(1, 0.396078, 0.164706, 0.933333)
+border_width_bottom = 25
+border_color = Color(0.564706, 0.121569, 0, 0.839216)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+expand_margin_top = 25.0
+anti_aliasing_size = 0.5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_umfp1"]
+content_margin_left = 40.0
+content_margin_top = 15.0
+content_margin_right = 40.0
+content_margin_bottom = 45.0
+bg_color = Color(1, 0.352941, 0.188235, 0.996078)
+border_width_bottom = 25
+border_color = Color(0.564706, 0.121569, 0, 0.839216)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+expand_margin_top = 25.0
+anti_aliasing_size = 0.5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xpfdr"]
+content_margin_left = 40.0
+content_margin_top = 50.0
+content_margin_right = 40.0
+content_margin_bottom = 40.0
+bg_color = Color(1, 0.352941, 0.188235, 0.996078)
+border_color = Color(1, 0.337255, 0.184314, 0.839216)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+anti_aliasing_size = 0.5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_humce"]
+content_margin_left = 0.0
+content_margin_top = 50.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+draw_center = false
+border_color = Color(0.305882, 0.0196078, 0.352941, 1)
+
+[resource]
+Button/font_sizes/font_size = 50
+Button/styles/hover = SubResource("StyleBoxFlat_the0i")
+Button/styles/normal = SubResource("StyleBoxFlat_umfp1")
+Button/styles/pressed = SubResource("StyleBoxFlat_xpfdr")
+Label/colors/font_color = Color(0.968627, 0.0862745, 0, 1)
+Label/font_sizes/font_size = 100
+ScrollContainer/styles/panel = SubResource("StyleBoxFlat_humce")
+VBoxContainer/constants/separation = 50

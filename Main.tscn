@@ -1,0 +1,304 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgqwuwaj2cyqo"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_ircpr"]
+[ext_resource type="Texture2D" uid="uid://cmoa2ylw1yc31" path="res://assets/Sprite-1.png" id="2_xvxso"]
+[ext_resource type="FontFile" uid="uid://hnybs4hc51i0" path="res://ChivoMono-VariableFont_wght.ttf" id="3_ticbv"]
+[ext_resource type="Theme" uid="uid://bm3cu0nt43f3h" path="res://assets/CommonTheme.tres" id="4_3xhv6"]
+
+[sub_resource type="FontVariation" id="FontVariation_n44jb"]
+base_font = ExtResource("3_ticbv")
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(10, 10)
+script = ExtResource("1_ircpr")
+metadata/_edit_horizontal_guides_ = []
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(96, 96)
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 0
+
+[node name="row1" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="c1" type="Control" parent="VBoxContainer/row1"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="1" type="Sprite2D" parent="VBoxContainer/row1/c1"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="c2" type="Control" parent="VBoxContainer/row1"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="2" type="Sprite2D" parent="VBoxContainer/row1/c2"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="c3" type="Control" parent="VBoxContainer/row1"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="3" type="Sprite2D" parent="VBoxContainer/row1/c3"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="row2" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="c4" type="Control" parent="VBoxContainer/row2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="4" type="Sprite2D" parent="VBoxContainer/row2/c4"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="c*" type="Control" parent="VBoxContainer/row2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="*" type="Sprite2D" parent="VBoxContainer/row2/c*"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="c6" type="Control" parent="VBoxContainer/row2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="6" type="Sprite2D" parent="VBoxContainer/row2/c6"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="row3" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(96, 32)
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="c7" type="Control" parent="VBoxContainer/row3"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="7" type="Sprite2D" parent="VBoxContainer/row3/c7"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="c8" type="Control" parent="VBoxContainer/row3"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="8" type="Sprite2D" parent="VBoxContainer/row3/c8"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="c9" type="Control" parent="VBoxContainer/row3"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="9" type="Sprite2D" parent="VBoxContainer/row3/c9"]
+texture_filter = 1
+texture = ExtResource("2_xvxso")
+centered = false
+
+[node name="Matrix" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="L00" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 320.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L01" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_left = 32.0
+offset_right = 352.0
+offset_bottom = 320.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L02" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_left = 64.0
+offset_right = 384.0
+offset_bottom = 320.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L10" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_top = 32.0
+offset_right = 320.0
+offset_bottom = 352.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L11" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 352.0
+offset_bottom = 352.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "*"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L12" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_left = 64.0
+offset_top = 32.0
+offset_right = 384.0
+offset_bottom = 352.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "6"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L20" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_top = 64.0
+offset_right = 320.0
+offset_bottom = 384.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "7"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L21" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_left = 32.0
+offset_top = 64.0
+offset_right = 352.0
+offset_bottom = 384.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "8"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="L22" type="Label" parent="Matrix"]
+texture_filter = 3
+layout_mode = 0
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 384.0
+offset_bottom = 384.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 250
+text = "9"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Comparisons" type="Label" parent="."]
+texture_filter = 3
+offset_left = 96.0
+offset_top = 1.0
+offset_right = 545.0
+offset_bottom = 123.0
+scale = Vector2(0.1, 0.1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 100
+text = "Comp: 0"
+vertical_alignment = 1
+
+[node name="A_star" type="Button" parent="."]
+offset_left = 103.0
+offset_top = 40.6002
+offset_right = 719.0
+offset_bottom = 279.6
+scale = Vector2(0.1, 0.1)
+focus_mode = 0
+theme = ExtResource("4_3xhv6")
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 150
+text = "A*"
+
+[node name="BFS" type="Button" parent="."]
+offset_left = 103.0
+offset_top = 70.6001
+offset_right = 719.0
+offset_bottom = 309.6
+scale = Vector2(0.1, 0.1)
+focus_mode = 0
+theme = ExtResource("4_3xhv6")
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 150
+text = "BFS"
+
+[node name="Reset" type="Button" parent="."]
+offset_left = 121.0
+offset_top = 17.5
+offset_right = 557.0
+offset_bottom = 196.5
+scale = Vector2(0.1, 0.1)
+focus_mode = 0
+theme = ExtResource("4_3xhv6")
+theme_override_fonts/font = SubResource("FontVariation_n44jb")
+theme_override_font_sizes/font_size = 100
+text = "Reset"
+
+[connection signal="pressed" from="A_star" to="." method="_on_a_star_pressed"]
+[connection signal="pressed" from="BFS" to="." method="_on_bfs_pressed"]
+[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]
